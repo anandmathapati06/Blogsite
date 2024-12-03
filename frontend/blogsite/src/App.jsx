@@ -8,9 +8,13 @@ import Blog from './Blog'
 import ContextProvider from './Context'
 import Layout from './Layout'
 
+
+
+
   function App() {
    
-
+    console.log(import.meta.env.VITE_API);
+    
 
     return (
     

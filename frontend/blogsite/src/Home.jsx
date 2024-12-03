@@ -21,7 +21,7 @@ function Home() {
 useEffect(()=>{
   async function fetchBlog(){
 
-    const result1 = await axios.get(`${process.env.REACT_APP_API_ADDRESS}/blogs`)
+    const result1 = await axios.get(`${import.meta.env.VITE_API}/blogs`)
  
     console.log(result1.data);
     setBlogs(result1.data)
@@ -34,7 +34,7 @@ useEffect(()=>{
 
 async function byids(para){
 
-    const result1 = await axios.get(`${process.env.REACT_APP_API_ADDRESS}/blogs/${para}`)
+    const result1 = await axios.get(`${import.meta.env.VITE_API}/blogs/${para}`)
     console.log(para)
     
     // console.log(result1.data[0])
