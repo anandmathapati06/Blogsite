@@ -11,7 +11,7 @@ function Blog() {
 
     async function byids(para){
       
-      const result1 = await axios.get(`http://localhost:8000/blogs/${para}`)
+      const result1 = await axios.get(`${process.env.REACT_APP_API_ADDRESS}/blogs/${para}`)
       console.log(para)
       console.log(result1.data[0])
       setSelectedBlog(result1.data[0]) 

@@ -21,7 +21,7 @@ function Home() {
 useEffect(()=>{
   async function fetchBlog(){
 
-    const result1 = await axios.get(`http://localhost:8000/blogs`)
+    const result1 = await axios.get(`${process.env.REACT_APP_API_ADDRESS}/blogs`)
  
     console.log(result1.data);
     setBlogs(result1.data)
@@ -34,7 +34,7 @@ useEffect(()=>{
 
 async function byids(para){
 
-    const result1 = await axios.get(`http://localhost:8000/blogs/${para}`)
+    const result1 = await axios.get(`${process.env.REACT_APP_API_ADDRESS}/blogs/${para}`)
     console.log(para)
     
     // console.log(result1.data[0])

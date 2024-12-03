@@ -24,7 +24,7 @@ function UploadBlog() {
 async function createBlog(){
 
   if(name != "" && title != "" && category != "" && content != "" && img != ""){
-        const result = await axios.post("http://localhost:8000/posts",{name,content,title,category,img,mail})
+        const result = await axios.post(`${process.env.REACT_APP_API_ADDRESS}/posts`,{name,content,title,category,img,mail})
       console.log(result);
       
       
