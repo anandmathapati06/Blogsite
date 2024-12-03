@@ -10,6 +10,11 @@ app.use(cors())
 app.use(express.json({limit : '5mb'}))
 dotenv.config()
 
+app.use(express.static("../frontend/blogsite/build"))
+
+app.get("*", (req,res)=>{
+    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
+})
 
 app.get("/",open)
 app.post("/posts",createBlog)

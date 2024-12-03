@@ -11,8 +11,7 @@ function open(req,res){
 async function createBlog(req,res){
     // console.log(req.params.id)
     const {name,content,title,category,img,mail} = req.body
-    console.log(name);
-    console.log(content);
+    
 
     const search = blogModel.find({name})
     try {
@@ -49,22 +48,27 @@ async function createBlog(req,res){
 }
 
 async function fetchBlogs(req,res){
-    const result = await blogModel.find()
 
-    res.send(result)
+    try {
+        
+        const result = await blogModel.find()
+    
+        res.send(result)
+    } catch (error) {
+      console.log("Error while fetching data",error);
+        
+    }
 }
 
 async function byId(req,res){
-    const id = req.params.id
-    console.log(id);
-    
-
-    const result = await blogModel.find({id})
-
+    try {
         
-    console.log(result);
-    
-    
-res.send(result)
+        const id = req.params.id
+        const result = await blogModel.find({id})
+        res.send(result)
+    } catch (error) {
+        console.log("error while getting details of blog",erroe);
+        
+    }
 }   
 export { open  , createBlog ,fetchBlogs ,byId}
