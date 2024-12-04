@@ -17,7 +17,7 @@
     <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#available-scripts">Available Scripts</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    
   </ul>
 
   <h2 id="features">Features</h2>
