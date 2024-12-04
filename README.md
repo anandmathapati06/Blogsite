@@ -75,7 +75,7 @@ npm install</code></pre>
       <pre><code>.env
 PORT=8000
 MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret</code></pre>
+</code></pre>
     </li>
     <li>Start the development servers:
       <ul>
