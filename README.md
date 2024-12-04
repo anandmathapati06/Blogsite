@@ -22,13 +22,9 @@
 
   <h2 id="features">Features</h2>
   <ul>
-    <li>User Authentication: Secure sign-up and login with JWT.</li>
-    <li>CRUD Operations: Users can create, edit, and delete blog posts.</li>
     <li>Responsive Design: Fully optimized for mobile and desktop.</li>
     <li>Fast and Lightweight: Built using Vite for a snappy development experience.</li>
-    <li>Rich Text Editing: Integrated WYSIWYG editor for formatting blog content.</li>
-    <li>Comment System: Allows users to comment on blog posts.</li>
-    <li>Search and Filter: Search for blogs by title or tags.</li>
+    
   </ul>
 
   <h2 id="technologies-used">Technologies Used</h2>
@@ -47,10 +43,7 @@
     <li>MongoDB (Mongoose)</li>
   </ul>
   <h3>Other Tools:</h3>
-  <ul>
-    <li>JSON Web Token (JWT) for authentication</li>
-    <li>Bcrypt.js for secure password hashing</li>
-  </ul>
+  
 
   <h2 id="getting-started">Getting Started</h2>
   <h3>Prerequisites</h3>
@@ -64,7 +57,7 @@
   <ol>
     <li>Clone the repository:
       <pre><code>git clone https://github.com/yourusername/blogify.git
-cd blogify</code></pre>
+cd blogsite</code></pre>
     </li>
     <li>Install dependencies:
       <ul>
@@ -80,7 +73,7 @@ npm install</code></pre>
     </li>
     <li>Set up environment variables:
       <pre><code>.env
-PORT=5000
+PORT=8000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret</code></pre>
     </li>
@@ -115,7 +108,7 @@ JWT_SECRET=your_jwt_secret</code></pre>
   <h3>Backend</h3>
   <ul>
     <li><code>npm run dev</code>: Starts the backend in development mode.</li>
-    <li><code>npm run start</code>: Starts the backend in production mode.</li>
+    <li><code>npm run dev</code>: Starts the backend in production mode.</li>
   </ul>
 
   <h2 id="contributing">Contributing</h2>
@@ -127,8 +120,7 @@ JWT_SECRET=your_jwt_secret</code></pre>
     <li>Create a pull request.</li>
   </ol>
 
-  <h2 id="license">License</h2>
-  <p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+ 
 
   <p><strong>Happy Blogging!</strong></p>
 </body>
